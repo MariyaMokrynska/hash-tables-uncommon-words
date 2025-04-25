@@ -3,7 +3,9 @@ from .contains_all import contains_all
 import pytest
 
 # tests
-@pytest.mark.skip("comment this skip out for challenge 1")
+
+
+# @pytest.mark.skip("comment this skip out for challenge 1")
 def test_gets_unique_words():
     expected = ["sweet", "sour"]
     sentences = [
@@ -14,7 +16,8 @@ def test_gets_unique_words():
     assert len(expected) == len(result)
     assert contains_all(expected, result)
 
-@pytest.mark.skip("comment this skip out for challenge 1")
+
+# @pytest.mark.skip("comment this skip out for challenge 1")
 def test_disallow_repeat_in_same_sentence():
     expected = ["banana"]
     sentences = [
@@ -24,8 +27,9 @@ def test_disallow_repeat_in_same_sentence():
     result = uncommon_from_sentences(sentences)
     assert len(expected) == len(result)
     assert contains_all(expected, result)
-    
-@pytest.mark.skip("comment this skip out for challenge 1")
+
+
+# @pytest.mark.skip("comment this skip out for challenge 1")
 def test_gets_unique_words_from_three_sentences():
     expected = ["tulips", "have", "thorns"]
     sentences = [
@@ -36,4 +40,3 @@ def test_gets_unique_words_from_three_sentences():
     result = uncommon_from_sentences(sentences)
     assert len(expected) == len(result)
     assert contains_all(expected, result)
-    
